@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/upper_half_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/main_color"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/add_event_upper_half_layout_padding_bot">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/left_and_right_padding"
+                android:paddingRight="@dimen/left_and_right_padding">
+
+
+                <ImageView
+                    android:id="@+id/nav_back_button"
+                    android:layout_width="@dimen/nav_back_icon_size"
+                    android:layout_height="@dimen/nav_back_icon_size"
+                    android:background="@drawable/nav_back_arrow"
+                    app:layout_constraintBottom_toTopOf="@id/add_event_header_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/add_event_header_text"
+                    style="@style/addEventFragmentHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/nav_back_margin_top"
+                    android:text="@string/add_event_header"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/add_event_title_section"
+                    layout="@layout/add_event_section_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_section_gap"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_event_header_text" />
+
+                <include
+                    android:id="@+id/add_event_location_section"
+                    layout="@layout/add_event_section_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_section_gap"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_event_title_section" />
+
+                <include
+                    android:id="@+id/add_event_start_date_section"
+                    layout="@layout/add_event_date_section"
+                    android:layout_width="@dimen/add_event_date_view_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_section_gap"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/add_event_location_section" />
+
+                <include
+                    android:id="@+id/add_event_end_date_section"
+                    layout="@layout/add_event_date_section"
+                    android:layout_width="@dimen/add_event_date_view_width"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_section_gap"
+                    app:layout_constraintBottom_toBottomOf="@id/add_event_start_date_section"
+                    app:layout_constraintRight_toRightOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lower_half_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_bottom_in_scroll_view"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/left_and_right_padding"
+                android:paddingTop="@dimen/add_event_lower_half_margin_top_small"
+                android:paddingRight="@dimen/left_and_right_padding">
+
+                <TextView
+                    android:id="@+id/category_section_header"
+                    style="@style/addEventFragmentSectionHeaderTextBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_top_margin_time_category"
+                    android:paddingBottom="@dimen/add_event_lower_half_margin_top_small"
+                    android:text="@string/add_event_category"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <include
+                    android:id="@+id/general_category_label"
+                    layout="@layout/add_event_category_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="@id/category_section_header"
+                    app:layout_constraintRight_toLeftOf="@id/social_category_label"
+                    app:layout_constraintTop_toBottomOf="@id/category_section_header" />
+
+                <include
+                    android:id="@+id/social_category_label"
+                    layout="@layout/add_event_category_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/add_event_space_between_category_labels"
+                    app:layout_constraintLeft_toRightOf="@id/general_category_label"
+                    app:layout_constraintRight_toLeftOf="@id/sport_category_label"
+                    app:layout_constraintTop_toBottomOf="@id/category_section_header" />
+
+                <include
+                    android:id="@+id/sport_category_label"
+                    layout="@layout/add_event_category_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/add_event_space_between_category_labels"
+                    app:layout_constraintLeft_toRightOf="@id/social_category_label"
+                    app:layout_constraintTop_toBottomOf="@id/category_section_header" />
+
+                <include
+                    android:id="@+id/online_category_label"
+                    layout="@layout/add_event_category_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_space_between_category_labels"
+                    app:layout_constraintLeft_toLeftOf="@id/general_category_label"
+                    app:layout_constraintRight_toRightOf="@id/general_category_label"
+                    app:layout_constraintTop_toBottomOf="@id/general_category_label" />
+
+
+                <TextView
+                    android:id="@+id/max_participants_check_box_text"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_lower_half_margin_top_big"
+                    android:text="@string/add_event_allow_max_participants_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/online_category_label"
+
+                    />
+
+                <CheckBox
+                    android:id="@+id/max_participants_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/max_participants_check_box_text"
+                    app:layout_constraintLeft_toRightOf="@id/max_participants_check_box_text"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/max_participants_check_box_text"
+
+                    />
+
+                <TextView
+                    android:id="@+id/max_participants_section"
+                    style="@style/normalText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_lower_half_margin_top_big"
+                    android:text="@string/add_event_max_participants"
+                    android:visibility="invisible"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/max_participants_check_box_text"
+                    tools:visibility="visible" />
+
+                <EditText
+                    android:id="@+id/max_participants_user_input"
+                    style="@style/addEventFragmentMaxParticipantsUserInputText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/add_event_max_participants_user_input_margin_start"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="@id/max_participants_section"
+                    app:layout_constraintLeft_toRightOf="@id/max_participants_section"
+                    app:layout_constraintTop_toTopOf="@id/max_participants_section"
+                    tools:visibility="visible" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_create_btn_margin_top"
+                    app:cardBackgroundColor="@color/main_color"
+                    app:cardCornerRadius="@dimen/add_event_btn_radius"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/max_participants_section">
+
+                    <Button
+                        android:id="@+id/create_event_button"
+                        style="@style/addEventBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/add_event_create_event_button_height"
+                        android:background="@android:color/transparent"
+                        android:text="@string/add_event_button_text" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
+
+

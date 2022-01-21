@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/multiple_day_event_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/start_date_label"
+            style="@style/eventDetailViewFragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_detail_start_date_label" />
+
+        <TextView
+            android:id="@+id/start_date"
+            style="@style/eventDetailViewFragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Do, 18.11. 22:00" />
+
+        <TextView
+            android:id="@+id/end_date_label"
+            style="@style/eventDetailViewFragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/event_detail_view_date_margin"
+            android:text="@string/event_detail_end_date_label" />
+
+        <TextView
+            android:id="@+id/end_date"
+            style="@style/eventDetailViewFragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Do, 18.11. 22:00" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/single_day_event_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/single_day_date_time"
+            style="@style/eventDetailViewFragmentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="14:00-15:00 Uhr" />
+
+        <TextView
+            android:id="@+id/single_day_date"
+            style="@style/eventDetailViewFragmentSmallText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Do, 18.11." />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/normalText"
+    android:layout_width="@dimen/my_meeting_events_item_width"
+    android:layout_height="@dimen/my_meeting_events_item_height"
+    android:background="@drawable/dashed_border"
+    android:gravity="center"
+    android:layout_marginTop="@dimen/no_my_meeting_events_hint_margin_top"
+    android:padding="@dimen/no_my_meeting_events_hint_padding"
+    android:text="@string/no_meeting_events_hint"
+    android:textStyle="bold" />

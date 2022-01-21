@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center_horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/main_color"
+        android:layout_marginBottom="@dimen/show_all_items_btn_margin_bottom"
+        app:cardCornerRadius="@dimen/show_all_events_btn_corner_radius">
+
+        <Button
+            android:id="@+id/show_all_item_btn_big"
+            style="@style/startFragmentBtn"
+            android:layout_width="@dimen/show_all_events_btn_width"
+            android:layout_height="@dimen/show_all_events_btn_height"
+            android:background="@android:color/transparent"
+            android:text="@string/show_all_items_button_text"
+            android:textColor="@color/white" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

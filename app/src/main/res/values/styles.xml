@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <style name="normalText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="dateHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/dateHeaderTextSize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="sectionHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/sectionHeaderTextSize</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- StartFragment -->
+
+    <style name="meetingEventTitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/meeting_event_title_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="meetingEventOrganizerText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/meeting_event_title_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="meetingEventDetailsText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@color/meeting_event_details_text_color</item>
+    </style>
+
+    <style name="myMeetingEventTitleText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/my_meeting_event_title_text_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="myMeetingEventDetailsText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/my_meeting_event_details_text_size</item>
+        <item name="android:textColor">@color/meeting_event_details_text_color</item>
+    </style>
+
+    <style name="startFragmentDateHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/header_date_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="startFragmentWelcomeText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/header_welcome_text_size</item>
+        <item name="android:textColor">@color/secondary_main_color</item>
+    </style>
+
+    <style name="startFragmentBtn" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!-- Add Event Fragment -->
+
+    <style name="addEventFragmentHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_header_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addEventFragmentSectionHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_section_header_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="addEventFragmentSectionHeaderTextBlack" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_section_header_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="addEventFragmentUserInputText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLength">50</item> <!-- maxLength does not work here for some reason -->
+        <item name="android:inputType">text</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+    <style name="addEventFragmentUserInputDateText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+    <style name="addEventFragmentUserInputLetterCount" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/letter_count_color</item>
+    </style>
+
+    <style name="addEventFragmentUserInputNumber" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="addEventFragmentTimeHeader" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_section_header_text_size</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="addEventFragmentUserTimeInputText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="addEventBtn" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_section_header_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="errorHintText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@color/error_hint_text_color</item>
+    </style>
+
+
+    <style name="addEventFragmentMaxParticipantsUserInputText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:maxLength">3</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:inputType">number</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+
+    <!-- Event Detail View -->
+
+    <style name="eventDetailViewFragmentHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/event_detail_view_header_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="eventDetailViewFragmentText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/event_detail_view_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="eventDetailViewFragmentSmallText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/event_detail_view_small_text_size</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="eventDetailViewFragmentBottomHeaderText" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/event_detail_view_header_text_size</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="commentBtn" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="eventDetailCommentUserInput" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">@dimen/add_event_user_input_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="background">@color/transparent</item>
+    </style>
+
+
+
+</resources>

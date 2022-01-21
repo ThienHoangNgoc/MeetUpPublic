@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_meeting_event_layout"
+    android:layout_width="@dimen/my_meeting_events_item_width"
+    android:layout_height="@dimen/my_meeting_events_item_height"
+    app:cardCornerRadius="@dimen/meeting_event_item_corner_radius"
+    android:layout_marginRight="@dimen/my_meeting_events_margin_right"
+    app:strokeWidth="@dimen/my_meeting_event_item_stroke_width"
+    tools:strokeColor="@color/sport_category_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/my_meeting_events_padding">
+
+        <TextView
+            android:id="@+id/my_meeting_event_title"
+            style="@style/myMeetingEventTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="BASEKTBALL" />
+
+        <TextView
+            android:id="@+id/my_meeting_event_date"
+            style="@style/myMeetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/my_meeting_event_start_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_meeting_event_title"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="27.01.2021" />
+
+        <TextView
+            android:id="@+id/my_meeting_event_start_time"
+            style="@style/myMeetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/my_meeting_event_location"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_meeting_event_date"
+            tools:text="19:00" />
+
+        <TextView
+            android:id="@+id/my_meeting_event_location"
+            style="@style/myMeetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/my_meeting_event_start_time"
+            tools:text="Berlin" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

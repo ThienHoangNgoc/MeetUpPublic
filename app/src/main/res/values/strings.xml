@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">MeetUpApp</string>
+
+
+    <!-- navigation -->
+    <string name="start">Start</string>
+    <string name="profile">Profil</string>
+
+    <!-- other fragments -->
+    <string name="settings">Einstellungen</string>
+
+
+    <!-- Start Fragment -->
+    <string name="my_meeting_events_header">Meine Aktivitäten</string>
+    <string name="open_meeting_events_header">Offene Aktivitäten</string>
+    <string name="no_meeting_events_hint">Du nimmt zurzeit an keiner Aktivität teil.</string>
+    <string name="no_open_meeting_events_hint">Zurzeit stehen keine Akitvitäten an!</string>
+    <string name="add_button_text">Hinzufügen</string>
+    <string name="show_all_items_button_text">Alle Anzeigen</string>
+    <string name="add_event_btn_text">+ Hinzufügen</string>
+    <string name="meeting_event_max_participants_label_text">Teilnehmer</string>
+
+    <!-- event categories -->
+    <string name="event_category_sport">Sport</string>
+    <string name="event_category_social">Sozial</string>
+    <string name="event_category_online">Online</string>
+    <string name="event_category_general">Allgemein</string>
+    <string name="my_events_title">Mein Aktivitäten</string>
+    <string name="all_events_title">Alle Aktivitäten</string>
+
+
+    <!-- Add Event Fragment -->
+    <string name="add_event_header">Aktivität erstellen</string>
+    <string name="add_event_title">TITEL</string>
+    <string name="add_event_location">ORT</string>
+    <string name="add_event_start_date">BEGINN</string>
+    <string name="add_event_end_date">ENDE</string>
+    <string name="add_event_category">KATEGORIEN</string>
+    <string name="add_event_max_participants">Maximale Teilnehmer Anzahl</string>
+    <string name="add_event_button_text">Aktivität erstellen</string>
+    <string name="add_event_letter_count_default">0</string>
+    <string name="add_event_letter_count_max">/50</string>
+    <string name="add_event_allow_max_participants_text">Maximale Teilnehmerzahl begrenzen?</string>
+    <string name="add_event_error_hint_text">Dieses Feld darf nicht leer sein.</string>
+    <!-- general Strings -->
+
+
+    <!-- Event Detail Fragment -->
+    <string name="event_detail_start_date_label">Beginn</string>
+    <string name="event_detail_end_date_label">Ende</string>
+    <string name="event_detail_participants_header">Teilnehmer</string>
+    <string name="event_detail_comment_section_header">Kommentare</string>
+    <string name="event_detail_comment_btn_text">Kommentieren</string>
+
+
+</resources>

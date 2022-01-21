@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/category_selected_icon.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/category_selector.xml" value="0.26944444444444443" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/dashed_border.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/default_profile_image.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.12239583333333333" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/nav_back_arrow.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/nav_home_icon.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/nav_profile_icon.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/drawable/not_shown_participants_background.xml" value="0.3828125" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/add_event_category_button.xml" value="0.32518115942028986" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/add_event_date_section.xml" value="0.33016304347826086" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/add_event_section_item.xml" value="0.22" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/add_event_start_end_time_item.xml" value="0.33016304347826086" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/date_header_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/empty_meeting_event_item.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/empty_my_meeting_events_list.xml" value="0.3523550724637681" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/fragment_add_event.xml" value="0.34375" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/fragment_event_detail_view.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/fragment_open_events.xml" value="0.3523550724637681" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/fragment_profile.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/fragment_start.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/meeting_event_item.xml" value="0.42283298097251587" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/my_meeting_event_item.xml" value="0.33" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/my_meeting_event_list.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/not_shown_participants_image.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/participant_profile_image.xml" value="0.17831813576494426" />
+        <entry key="..\:/Benutzer/Thien/Documents/AndroidStudioProjects/MeetUpApp/app/src/main/res/layout/progress_dialog_layout.xml" value="0.31567028985507245" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

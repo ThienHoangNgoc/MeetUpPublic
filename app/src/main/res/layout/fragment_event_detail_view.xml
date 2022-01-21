@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/upper_half_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sport_category_color"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/add_event_upper_half_layout_padding_bot">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/left_and_right_padding"
+                android:paddingRight="@dimen/left_and_right_padding">
+
+
+                <ImageView
+                    android:id="@+id/nav_back_button"
+                    android:layout_width="@dimen/nav_back_icon_size"
+                    android:layout_height="@dimen/nav_back_icon_size"
+                    android:background="@drawable/nav_back_arrow"
+                    app:layout_constraintBottom_toTopOf="@id/event_title"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/event_title"
+                    style="@style/eventDetailViewFragmentHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/nav_back_margin_top"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Basketball" />
+
+
+                <ImageView
+                    android:id="@+id/location_icon_view"
+                    android:layout_width="@dimen/event_detail_icon_size"
+                    android:layout_height="@dimen/event_detail_icon_size"
+                    android:layout_marginTop="@dimen/event_detail_view_section_margin"
+                    android:background="@drawable/event_location_icon"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/event_title" />
+
+
+                <TextView
+                    android:id="@+id/event_location"
+                    style="@style/eventDetailViewFragmentText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/event_detail_view_icon_text_margin"
+                    app:layout_constraintLeft_toRightOf="@id/location_icon_view"
+                    app:layout_constraintTop_toTopOf="@id/location_icon_view"
+                    tools:text="Event Ort" />
+
+                <ImageView
+                    android:id="@+id/date_icon_view"
+                    android:layout_width="@dimen/event_detail_icon_size"
+                    android:layout_height="@dimen/event_detail_icon_size"
+                    android:layout_marginTop="@dimen/event_detail_view_section_margin"
+                    android:background="@drawable/event_date_icon"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/location_icon_view" />
+
+                <include
+                    android:id="@+id/event_date_layout"
+                    layout="@layout/event_detail_view_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/event_detail_view_icon_text_margin"
+                    app:layout_constraintLeft_toRightOf="@id/date_icon_view"
+                    app:layout_constraintTop_toTopOf="@id/date_icon_view" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lower_half_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/left_and_right_padding"
+                android:paddingTop="@dimen/add_event_lower_half_margin_top_small"
+                android:paddingRight="@dimen/left_and_right_padding">
+
+                <TextView
+                    android:id="@+id/participants_header"
+                    style="@style/eventDetailViewFragmentBottomHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_detail_view_participants_top_margin"
+                    android:paddingBottom="@dimen/event_detail_view_padding_small"
+                    android:text="@string/event_detail_participants_header"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/participant_recycler_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/participants_header"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/comment_section_header"
+                    style="@style/eventDetailViewFragmentBottomHeaderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_detail_view_participants_top_margin"
+                    android:paddingBottom="@dimen/event_detail_view_padding_small"
+                    android:text="@string/event_detail_comment_section_header"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/participant_recycler_view" />
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/comments_recycler_view"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/comment_section_header"
+                    tools:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/comment_user_input"
+                    style="@style/eventDetailCommentUserInput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/comments_recycler_view" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/add_event_underline_margin"
+                    android:background="@color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/comment_user_input" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/event_detail_view_comment_btn_margin_top"
+                    app:cardBackgroundColor="@color/main_color"
+                    app:cardCornerRadius="@dimen/add_event_btn_radius"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/comment_user_input">
+
+                    <Button
+                        android:id="@+id/create_event_button"
+                        style="@style/commentBtn"
+                        android:layout_width="@dimen/event_detail_comment_btn_width"
+                        android:layout_height="@dimen/event_detail_comment_btn_height"
+                        android:background="@android:color/transparent"
+                        android:text="@string/event_detail_comment_btn_text" />
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+

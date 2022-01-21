@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meeting_event_item_layout"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/meeting_event_item_height"
+    android:layout_marginBottom="@dimen/meeting_event_item_margin_bottom"
+    android:orientation="horizontal"
+    app:cardCornerRadius="@dimen/meeting_event_item_corner_radius"
+    app:strokeWidth="@dimen/meeting_event_item_stroke_width"
+    tools:strokeColor="@color/sport_category_color">
+
+    <View
+        android:id="@+id/category_indicator"
+        android:layout_width="@dimen/meeting_event_item_category_indicator_width"
+        android:layout_height="match_parent"
+        tools:background="@color/sport_category_color" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="@dimen/meeting_event_item_content_padding_start"
+        android:paddingTop="@dimen/meeting_event_item_content_padding_top_bottom_end"
+        android:paddingEnd="@dimen/meeting_event_item_content_padding_top_bottom_end"
+        android:paddingBottom="@dimen/meeting_event_item_content_padding_top_bottom_end">
+
+        <TextView
+            android:id="@+id/meeting_event_item_title"
+            style="@style/meetingEventTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Basketball" />
+
+
+        <TextView
+            android:id="@+id/meeting_event_item_start_date"
+            style="@style/meetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/meeting_event_item_start_time"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/meeting_event_item_title"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="27.02.2020" />
+
+        <TextView
+            android:id="@+id/meeting_event_item_start_time"
+            style="@style/meetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/meeting_event_item_location"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/meeting_event_item_start_date"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="13:00" />
+
+
+        <TextView
+            android:id="@+id/meeting_event_item_location"
+            style="@style/meetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/organizer_profile_image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/meeting_event_item_start_time"
+            tools:text="Berlin" />
+
+
+
+
+
+        <ImageView
+            android:id="@+id/organizer_profile_image"
+            android:layout_width="@dimen/organizer_profile_image_size"
+            android:layout_height="@dimen/organizer_profile_image_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:background="@drawable/default_profile_image" />
+
+        <TextView
+            android:id="@+id/meeting_event_item_organizer"
+            style="@style/normalText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/participant_image_margin_left"
+            app:layout_constraintBottom_toBottomOf="@id/organizer_profile_image"
+            app:layout_constraintLeft_toRightOf="@id/organizer_profile_image"
+            app:layout_constraintTop_toTopOf="@id/organizer_profile_image"
+            tools:text="User 01" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:cardCornerRadius="@dimen/category_label_corner_radius"
+            app:cardElevation="@dimen/category_label_elevation"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/meeting_event_item_category_label"
+                style="@style/normalText"
+                android:layout_width="@dimen/category_label_width"
+                android:layout_height="@dimen/category_label_height"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                tools:background="@color/sport_category_color"
+                tools:text="@string/event_category_sport" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/participants_label"
+            style="@style/meetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/max_participants_label_margin_end"
+            android:textStyle="bold"
+            app:layout_constraintRight_toLeftOf="@id/meeting_event_max_participants"
+            app:layout_constraintTop_toTopOf="@id/meeting_event_max_participants"
+            app:layout_constraintBottom_toBottomOf="@id/meeting_event_max_participants"
+            android:text="@string/meeting_event_max_participants_label_text"
+            />
+
+        <TextView
+            android:id="@+id/meeting_event_max_participants"
+            style="@style/meetingEventDetailsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/meeting_event_item_location"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/meeting_event_item_location"
+            tools:text="3/5"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/participant_image_view_01"
+            android:layout_width="@dimen/organizer_profile_image_size"
+            android:layout_height="@dimen/organizer_profile_image_size"
+            android:layout_marginEnd="@dimen/participant_image_margin_left"
+            android:background="@drawable/default_profile_image"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/participant_image_view_02" />
+
+        <ImageView
+            android:id="@+id/participant_image_view_02"
+            android:layout_width="@dimen/organizer_profile_image_size"
+            android:layout_height="@dimen/organizer_profile_image_size"
+            android:layout_marginEnd="@dimen/participant_image_margin_left"
+            android:background="@drawable/default_profile_image"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/participant_image_view_03" />
+
+        <ImageView
+            android:id="@+id/participant_image_view_03"
+            android:layout_width="@dimen/organizer_profile_image_size"
+            android:layout_height="@dimen/organizer_profile_image_size"
+            android:layout_marginEnd="@dimen/participant_image_margin_left"
+            android:background="@drawable/default_profile_image"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/not_shown_participants" />
+
+        <FrameLayout
+            android:id="@+id/not_shown_participants"
+            android:layout_width="@dimen/organizer_profile_image_size"
+            android:layout_height="@dimen/organizer_profile_image_size"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+            <ImageView
+                android:id="@+id/not_shown_participants_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/not_shown_participants_background" />
+
+            <TextView
+                android:id="@+id/not_shown_participants_text_number"
+                style="@style/normalText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                tools:text="+3" />
+
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

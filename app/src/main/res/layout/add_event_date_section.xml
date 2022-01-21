@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/section_header_text"
+        style="@style/addEventFragmentSectionHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/add_event_title" />
+
+    <TextView
+        android:id="@+id/user_input"
+        style="@style/addEventFragmentUserInputDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/section_header_text" />
+
+
+    <ImageView
+        android:id="@+id/open_calendar_button"
+        android:layout_width="@dimen/add_event_open_calendar_icon_size"
+        android:layout_height="@dimen/add_event_open_calendar_icon_size"
+        android:background="@drawable/open_calendar_icon"
+        app:layout_constraintBottom_toBottomOf="@id/user_input"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/user_input" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/add_event_underline_height"
+        android:layout_marginTop="@dimen/add_event_underline_margin"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_input" />
+
+    <TextView
+        android:id="@+id/error_hint_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_marginTop="@dimen/add_event_error_hint_margin"
+        android:text="@string/add_event_error_hint_text"
+        style="@style/errorHintText"
+        app:layout_constraintTop_toBottomOf="@id/user_input"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

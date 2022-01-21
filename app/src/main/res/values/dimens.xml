@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- T E X T   S I Z E S -->
+
+    <!-- General  -->
+    <dimen name="normalTextSize">12sp</dimen>
+    <dimen name="dateHeaderTextSize">20sp</dimen>
+    <dimen name="sectionHeaderTextSize">26sp</dimen>
+
+    <!-- Start Fragment -->
+    <dimen name="meeting_event_title_text_size">16sp</dimen>
+    <dimen name="my_meeting_event_title_text_size">12sp</dimen>
+    <dimen name="my_meeting_event_details_text_size">10sp</dimen>
+    <dimen name="header_date_text_size">18sp</dimen>
+    <dimen name="header_welcome_text_size">14dp</dimen>
+
+    <!-- T E X T   S I Z E S   E N D -->
+
+    <!-- general Sizes -->
+    <dimen name="underscore_line_thin">1dp</dimen>
+    <dimen name="left_and_right_padding">20dp</dimen>
+    <dimen name="padding_bottom_in_scroll_view">30dp</dimen>
+
+
+    <!-- S T A R T   F R A G M E N T -->
+
+    <!-- general -->
+    <dimen name="start_fragment_header_margin_top">50dp</dimen>
+    <dimen name="start_fragment_recycler_view_margin_top">15dp</dimen>
+    <dimen name="space_between_date_and_welcome">5dp</dimen>
+    <dimen name="start_fragment_section_header_margin_top">20dp</dimen>
+
+    <!-- add btn -->
+    <dimen name="add_event_btn_width">116dp</dimen>
+    <dimen name="add_event_btn_height">40dp</dimen>
+    <dimen name="add_event_btn_radius">20dp</dimen>
+
+    <!-- My Meeting Event Item -->
+    <dimen name="my_meeting_events_item_width">110dp</dimen>
+    <dimen name="my_meeting_events_item_height">80dp</dimen>
+    <dimen name="my_meeting_events_padding">10dp</dimen>
+    <dimen name="my_meeting_events_margin_right">20dp</dimen>
+    <dimen name="my_meeting_event_item_stroke_width">2dp</dimen>
+    <dimen name="no_my_meeting_events_hint_padding">10dp</dimen>
+    <dimen name="no_my_meeting_events_hint_corner_radius">10dp</dimen>
+    <dimen name="no_my_meeting_events_hint_margin_top">10dp</dimen>
+
+    <!-- Meeting Event Item -->
+    <dimen name="meeting_event_item_stroke_width">1dp</dimen>
+    <dimen name="meeting_event_item_corner_radius">10dp</dimen>
+    <dimen name="meeting_event_item_height">125dp</dimen>
+    <dimen name="meeting_event_item_margin_bottom">15dp</dimen>
+    <dimen name="meeting_event_item_category_indicator_width">10dp</dimen>
+    <dimen name="meeting_event_item_content_padding_top_bottom_end">10dp</dimen>
+    <dimen name="meeting_event_item_content_padding_start">20dp</dimen>
+    <dimen name="organizer_profile_image_size">30dp</dimen>
+    <dimen name="organizer_margin_left">10dp</dimen>
+    <dimen name="category_label_width">85dp</dimen>
+    <dimen name="category_label_height">30dp</dimen>
+    <dimen name="category_label_corner_radius">13dp</dimen>
+    <dimen name="category_label_elevation">3dp</dimen>
+    <dimen name="participant_image_margin_left">5dp</dimen>
+    <dimen name="no_events_image_width">261.25dp</dimen>
+    <dimen name="no_events_image_height">220dp</dimen>
+    <dimen name="no_events_text_padding_bottom">10dp</dimen>
+    <dimen name="max_participants_label_margin_end">5dp</dimen>
+
+    <!-- date header -->
+    <dimen name="date_header_margin_top_and_bottom">5dp</dimen>
+
+    <!-- show items btn -->
+    <dimen name="show_all_events_btn_width">114dp</dimen>
+    <dimen name="show_all_events_btn_height">40dp</dimen>
+    <dimen name="show_all_items_btn_margin_bottom">20dp</dimen>
+    <dimen name="show_all_events_btn_corner_radius">20dp</dimen>
+    <dimen name="show_all_events_text_btn_margin_bottom">5dp</dimen>
+
+
+    <!-- S T A R T   F R A G M E N T   E N D -->
+
+
+    <!-- B A C K    N A V I G A T I O N -->
+    <dimen name="nav_back_icon_size">30dp</dimen>
+    <dimen name="nav_back_margin_top">50dp</dimen>
+
+    <!-- A D D   E V E N T   F R A G M E N T -->
+
+    <!-- text sizes -->
+    <dimen name="add_event_header_text_size">20sp</dimen>
+    <dimen name="add_event_section_header_text_size">18sp</dimen>
+    <dimen name="add_event_user_input_text_size">14sp</dimen>
+    <dimen name="create_event_button_text_size">20sp</dimen>
+
+    <!-- view sizes -->
+    <dimen name="start_end_time_underscore_width">30dp</dimen>
+    <dimen name="add_event_date_underline_width">90dp</dimen>
+    <dimen name="add_event_underline_height">1dp</dimen>
+    <dimen name="add_event_open_calendar_icon_size">30dp</dimen>
+    <dimen name="add_event_date_view_width">150dp</dimen>
+
+
+    <!-- margins -->
+
+    <dimen name="add_event_section_gap">20dp</dimen>
+    <dimen name="add_event_section_user_input_gap">5dp</dimen>
+    <dimen name="add_event_underline_margin">1dp</dimen>
+    <dimen name="add_event_upper_half_layout_padding_bot">20dp</dimen>
+    <dimen name="add_event_margin_right_end_time">100dp</dimen>
+    <dimen name="add_event_lower_half_margin_top_small">10dp</dimen>
+    <dimen name="add_event_lower_half_margin_top_big">20dp</dimen>
+    <dimen name="add_event_top_margin_time_header_input">5dp</dimen>
+    <dimen name="add_event_top_margin_time_category">10dp</dimen>
+    <dimen name="add_event_create_event_button_height">44dp</dimen>
+    <dimen name="add_event_space_between_category_labels">10dp</dimen>
+    <dimen name="add_event_max_participants_user_input_margin_start">20dp</dimen>
+    <dimen name="add_event_error_hint_margin">3dp</dimen>
+    <dimen name="add_event_create_btn_margin_top">30dp</dimen>
+    <!-- A D D   E V E N T   F R A G M E N T   E N D -->
+
+
+    <!-- A D D   E V E N T   F R A G M E N T -->
+
+    <!-- text sizes -->
+    <dimen name="event_detail_view_header_text_size">20sp</dimen>
+    <dimen name="event_detail_view_text_size">16sp</dimen>
+    <dimen name="event_detail_view_small_text_size">14sp</dimen>
+
+    <!-- view sizes -->
+    <dimen name="event_detail_icon_size">25dp</dimen>
+    <dimen name="event_detail_comment_btn_width">120dp</dimen>
+    <dimen name="event_detail_comment_btn_height">40dp</dimen>
+    <dimen name="event_detail_comment_user_input_width">200dp</dimen>
+
+    <!-- margins -->
+    <dimen name="event_detail_view_date_margin">5dp</dimen>
+    <dimen name="event_detail_view_section_margin">20dp</dimen>
+    <dimen name="event_detail_view_icon_text_margin">5dp</dimen>
+    <dimen name="event_detail_view_participants_top_margin">10dp</dimen>
+    <dimen name="event_detail_view_padding_small">10dp</dimen>
+    <dimen name="event_detail_view_comment_btn_margin_top">10dp</dimen>
+
+
+</resources>

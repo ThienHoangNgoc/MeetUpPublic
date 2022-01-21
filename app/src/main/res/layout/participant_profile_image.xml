@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/participant_image_view"
+    android:layout_marginLeft="@dimen/participant_image_margin_left"
+    android:layout_width="@dimen/organizer_profile_image_size"
+    android:layout_height="@dimen/organizer_profile_image_size"
+    android:background="@drawable/default_profile_image" />

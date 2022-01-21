@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/category_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    app:cardCornerRadius="@dimen/category_label_corner_radius"
+    app:cardElevation="@dimen/category_label_elevation"
+    app:checkedIconTint="@color/white"
+    app:checkedIcon="@drawable/category_selected_icon"
+    android:clickable="true"
+    android:focusable="true"
+    android:checkable="true"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/meeting_event_item_category_label"
+        style="@style/normalText"
+        android:background="@color/sport_category_color"
+        android:text="@string/event_category_sport"
+        android:layout_width="@dimen/category_label_width"
+        android:layout_height="@dimen/category_label_height"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+</com.google.android.material.card.MaterialCardView>
