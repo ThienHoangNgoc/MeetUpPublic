@@ -1,5 +1,6 @@
 package com.example.meetupapp.ui.start
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.liveData
@@ -15,6 +16,8 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.coroutineScope
 import javax.inject.Inject
 import com.example.meetupapp.app_extensions.convertStringToDateComparable
+import com.example.meetupapp.app_extensions.convertStringToLocalDate
+import com.example.meetupapp.app_extensions.convertStringToLocalDateTime
 import java.time.LocalDate
 import java.time.LocalDateTime
 import java.util.*
@@ -44,8 +47,6 @@ class StartViewModel @Inject constructor(
         return "Hallo, $userName"
     }
 
-    //Todo: Remove past events from DB
-
     @OptIn(ExperimentalStdlibApi::class)
     private fun createStartViewItems(
             myEvents: List<MyMeetingEventItem>,
@@ -64,7 +65,7 @@ class StartViewModel @Inject constructor(
             if (allEvents.isEmpty() || getAllFutureEvents(allEvents).isEmpty()) {
                 add(StartViewItem.EmptyStartViewMeetingEventItem)
                 add(StartViewItem.ShowAllItemsTextBtn(showTextBtn = false, isMyEvents = false))
-            }else {
+            } else {
                 add(StartViewItem.ShowAllItemsTextBtn(true, isMyEvents = false))
                 var oldDate = ""
                 var newDate: String
@@ -84,12 +85,17 @@ class StartViewModel @Inject constructor(
         }
     }
 
-    //TOdo: Date() doesn't work as intended -> inspect mit LocalDateTime.isNow() ersetzen
+    /**
+     * Only show current and future events in my events and all events
+     * checks if event is still present or in the future
+     */
     @OptIn(ExperimentalStdlibApi::class)
     private fun getAllFutureEvents(allEvents: List<MeetingEventItem>): List<MeetingEventItem> {
         return buildList {
             allEvents.forEach { event ->
-                if(Date() < (event.startDate.convertStringToDateComparable())){
+                if (LocalDate.now().isBefore(event.startDate.convertStringToLocalDate()) ||
+                    LocalDate.now().isEqual(event.startDate.convertStringToLocalDate())
+                ) {
                     add(event)
                 }
             }
@@ -100,7 +106,9 @@ class StartViewModel @Inject constructor(
     private fun getMyFutureEvents(allEvents: List<MyMeetingEventItem>): List<MyMeetingEventItem> {
         return buildList {
             allEvents.forEach { event ->
-                if(Date() < (event.startDate.convertStringToDateComparable())){
+                if (LocalDate.now().isBefore(event.startDate.convertStringToLocalDate()) ||
+                    LocalDate.now().isEqual(event.startDate.convertStringToLocalDate())
+                ) {
                     add(event)
                 }
             }
